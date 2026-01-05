@@ -1,0 +1,94 @@
+/* ID & Name: 223105417 & Saif Amer
+Course: CSE211 Web Programming
+Assignment: Registration Page Styling
+Date: 5th January 2026
+Description: This CSS file handles the styling for the registration page, including form layout, input styling.
+*/
+
+#registration-section {
+    background-color: #ffffff;
+    max-width: 600px; 
+    margin: 40px auto; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+}
+
+#registration-section h1 {
+    color: #557368;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* this is the gap between header and form */
+
+#registration-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+/* 3. Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Keeps labels aligned left while main is centered */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #557368;
+    box-shadow: 0 0 8px rgba(85, 115, 104, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#submit-btn {
+    background-color: #557368;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; 
+}
+
+#submit-btn:hover {
+    background-color: #3e5a50;
+    transform: translateY(-3px);
+}
+
+#main-navigation a#selected {
+    color: #0900b9;
+        font-size: 24px;
+
+}
