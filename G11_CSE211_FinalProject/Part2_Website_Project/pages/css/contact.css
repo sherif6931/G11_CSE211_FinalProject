@@ -1,0 +1,90 @@
+/*
+ID & Name: 223105417 & Saif Amer
+Course: CSE211 Web Programming
+Assignment: Course Project
+Date: 5 January 2026
+Description: This CSS file handles the styling for the contact page.
+*/
+
+/* Container to help push the footer down */
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh; /* Keeps space for the footer */
+    padding-bottom: 50px;
+}
+
+#contact-header {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#contact-header h1 {
+    color: #557368;
+    font-size: 2.5rem;
+}
+
+/* Stacking the boxes vertically */
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Simple Card Style */
+.contact-info, .contact-form-box {
+    background: #ffffff; /* Changed to white for a cleaner look */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px; /* Prevents the boxes from being too wide */
+    border: 1px solid #ddd;
+}
+
+/* Form Spacing */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Important for width */
+}
+
+/* The Submit Button */
+#submit-btn {
+    background-color: #3b82f6; /* Blue like your top button */
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #2563eb;
+}
+
+#main-navigation a#selected {
+    color: #0900b9;
+    font-size: 24px;
+}
