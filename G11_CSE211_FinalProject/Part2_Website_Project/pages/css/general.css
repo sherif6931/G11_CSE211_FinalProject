@@ -1,0 +1,145 @@
+/*
+ID & Name: 223105417 & Saif Amer
+Course: CSE211 Web Programming
+Assignment: Course Project
+Date: 5 January 2026
+Description: This CSS file handles the styling for the sticky header and main navigation and footer, and all base colors.
+*/
+
+body {
+    min-height: 100vh;
+    background-color: #f0e8dd;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Ensures the sticky header touches the very top */
+}
+
+#top-main {
+    position: -webkit-sticky;   
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #AC997F; 
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds depth when scrolling */
+}
+
+/* Changed from grid to flex to meet project requirements */
+#main-navigation ul {
+    display: flex; 
+    justify-content: center; /* Properly centers the links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-navigation li {
+    margin: 0 20px;
+}
+
+#main-navigation a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    display: inline-block;
+}
+
+#main-navigation a:hover {
+    color: #7C7B8E;
+    transform: translateY(-3px); 
+}
+
+#top-text-header {
+    text-align: center;
+    font-size: 32px;
+    color: #3b3a5c;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#logo {
+    position: absolute;
+    bottom: auto;
+    margin-left: 20px;
+
+}
+
+
+footer{
+
+    background-color: #3b3a5c;
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    left: 0%;
+    bottom: 0%;
+    margin-top: auto;
+
+}
+
+
+
+#footer-section ul {
+    display: flex; 
+    justify-content: center; /* Properly centers the links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-section li {
+    margin: 0 20px;
+}
+
+#footer-section a:hover {
+    color: #5E5D78;
+    transform: translateY(-3px); 
+}
+#footer-section a {
+    color: #020047;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    display: inline-block;
+}
+
+
+
+
+.event-card {
+    display: flex;
+    background: #CCBFAC;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+    border: 1px solid #CCBFAC;
+}
+
+.event-card:hover {
+    transform: scale(1.02); 
+}
+
+.breadcrumb {
+    position: absolute;
+    left: auto;
+    padding: 10px 20px;
+    margin: 30px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    background-color: #f9f7f4; 
+    border-radius: 5px;
+}
+
+.breadcrumb a {
+    color: #557368; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #1a2a6c; 
+    text-decoration: underline;
+}
