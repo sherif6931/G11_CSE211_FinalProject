@@ -6,6 +6,148 @@ Date: 5 January 2026
 Description: This CSS file handles the styling for the sticky header and main navigation and footer, and all base colors.
 */
 
+
+/*THIS IS FOR MOBILE FIX*/
+
+@media (max-width: 768px) {
+    /* 1. Hide the Logo */
+    #logo {
+        display: none !important;
+    }
+
+    /* 2. Fix the Header & Background */
+    #top-main {
+        width: 100% !important;
+        position: relative; /* Change from sticky/absolute to relative for better flow */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #top-text-header {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* 3. Force Navigation to stack and center */
+    #main-navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    #main-navigation li {
+        margin: 8px 0;
+    }
+
+    /* 4. Fix the Footer (The blue box) */
+    footer {
+        width: 100% !important;
+        position: relative;
+        left: 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    #footer-section ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* 5. Fix those Ticket/Event Cards and Forms */
+    .event-card, 
+    div[style*="border"], 
+    section {
+        width: 95% !important; /* Forces them to stay inside the phone screen */
+        max-width: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Reset Body to allow full width */
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevents side-scrolling */
+    }
+
+    /* 2. Force Header to span 100% of the viewport */
+    #top-main {
+        width: 100vw !important; /* vw = viewport width (100% of screen) */
+        left: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 3. Force Footer to span 100% of the viewport */
+    footer {
+        width: 100vw !important;
+        position: relative;
+        left: 0;
+        margin: 0;
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 4. Fix content containers that are pushing the page wide */
+    .event-card, 
+    #footer-section,
+    section {
+        width: 90% !important; /* Keep content slightly smaller than screen */
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*THIS IS MOBILE BREADCRUMBS*/
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        /* 1. Reset positioning so it stays in the flow */
+        position: relative !important; 
+        
+        /* 2. Clear out the desktop absolute coordinates */
+        left: 0 !important;
+        top: 0 !important;
+        
+        /* 3. Center it and give it some breathing room */
+        display: block;
+        width: fit-content;
+        margin: 20px auto !important; 
+        text-align: center;
+        
+        /* 4. Adjust size for mobile screens */
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    /* Ensure the header isn't hiding the breadcrumb */
+    #top-main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 body {
     min-height: 100vh;
     background-color: #f0e8dd;
@@ -77,6 +219,13 @@ footer{
     margin-top: auto;
 
 }
+
+footer {
+    width: 100vw !important; /* Forces it to be exactly 100% of the viewport width */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    left: 0 !important;
+}       
 
 
 
