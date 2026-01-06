@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/events.css">
+    <title>Events - EventX</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <header id="top-main">
+        <a id="logo" href="../index.html"><img src="./images/logo.jpg" alt="EventX Logo" width="100" height="100"></a>
+        <p id="top-text-header">EventX &mdash; An Event Planner Platform</p>
+
+        <nav id="main-navigation" aria-label="Main Navigation">
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html"></a></li>
+                <li><a href="./registration.html">Registeration</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./calculator.html">Budget Calculator</a></li>
+                <li><a href="./events.html" id="selected">Events</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="breadcrumb" class="breadcrumb">
+                <a href="../index.html">Home</a> &gt; <a href="#">Events</a>
+    </nav>
+    </header>
+    
+
+<main id="events-dashboard">
+    <section class="parallax-banner">
+<<<<<<< HEAD
+        <div class="parallax-layer" data-speed="0.3">
+            <h1>Upcoming Events</h1>
+            <p>Experience the best conferences, music festivals, and workshops!</p>
+        </div>
+        <img class="parallax-layer" data-speed="0.5" src="./images/event.jpg" alt="Event Banner">
+    </section>
+    
+=======
+    <div class="parallax-layer" data-speed="0.3">
+        <h1>Upcoming Events</h1>
+        <p>Experience the best conferences, music festivals, and workshops!</p>
+    </div>
+    <img class="parallax-layer" data-speed="0.5" src="./images/event.jpg" alt="Event Banner">
+</section>
+>>>>>>> bede18ebbec434dbff6b1d0aa00dde3dbaa8ef43
+    <div class="header-flex">
+        <h1>Upcoming Events</h1>
+        
+        <div class="filter-controls">
+            <input type="text" placeholder="Search events..." id="event-search">
+            <select id="category-filter">
+                <option>All Categories</option>
+                <option>Conference</option>
+                <option>Music</option>
+                <option>Workshop</option>
+            </select>
+        </div>
+    </div>
+    
+    <section class="table-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Category</th>
+                    <th>Cost</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tech Conference 2026</td>
+                    <td>2026-03-15</td>
+                    <td>Egypt, Alexandria</td>
+                    <td><span class="badge tech">Conference</span></td>
+                    <td>299LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>Global Web Dev Summit</td>
+                    <td>2026-03-20</td>
+                    <td>Egypt, Alexandria</td>
+                    <td><span class="badge tech">Conference</span></td>
+                    <td>399LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>AI & Data Insights Conference</td>
+                    <td>2026-01-20</td>
+                    <td>Egypt, New Cario</td>
+                    <td><span class="badge tech">Conference</span></td>
+                    <td>499LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>RhythmWave Music Festival</td>
+                    <td>2026-07-20</td>
+                    <td>Egypt, Giza</td>
+                    <td><span class="badge music">Music</span></td>
+                    <td>150LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>Harmony Fields Music Festival</td>
+                    <td>2026-04-17</td>
+                    <td>Egypt, Cairo</td>
+                    <td><span class="badge music">Music</span></td>
+                    <td>100LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>EchoFest Music Festival</td>
+                    <td>2026-01-10</td>
+                    <td>Egypt, Giza</td>
+                    <td><span class="badge music">Music</span></td>
+                    <td>150LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>SolarBeats Music Festival</td>
+                    <td>2026-06-27</td>
+                    <td>Egypt, Giza</td>
+                    <td><span class="badge music">Music</span></td>
+                    <td>99LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>LunarVibes Music Festival</td>
+                    <td>2026-04-14</td>
+                    <td>Egypt, Cairo</td>
+                    <td><span class="badge music">Music</span></td>
+                    <td>160LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                <tr>
+                    <td>Hands-On JavaScript & Web Design Workshop</td>
+                    <td>2026-07-20</td>
+                    <td>Egypt, Cairo</td>
+                    <td><span class="badge workshop">Workshop</span></td>
+                    <td>250LE</td>
+                    <td><a href="registration.html" class="reg-btn">Register</a></td>
+                </tr>
+                </tbody>
+        </table>
+    </section>
+    
+</main>
+    <footer id="footer-section">
+        <div class="footer-class">
+            <div id="footer-links">
+                <ul>
+                    <li hidden>Social Links</li>
+
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>You can email us <a href="mailto:sherif6931@github.com">here</a>.</p>
+            </div>
+            <div>
+                <p>&copy; 2026 EventX. All rights reserved.</p>
+                <p>This was last updated <time datetime="2026-1-04">January 1, 2026</time>.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/events.js"></script>
+</body>
+</html>

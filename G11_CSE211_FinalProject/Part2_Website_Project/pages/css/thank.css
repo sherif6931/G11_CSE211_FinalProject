@@ -1,0 +1,47 @@
+/* Thank You Page Styling */
+#thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Centers the message vertically in the viewport */
+}
+
+.success-message {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-top: 5px solid #557368; /* Theme color accent */
+}
+
+.icon-check {
+    font-size: 50px;
+    color: #557368;
+    margin-bottom: 20px;
+}
+
+/* Button Styling with Required Hover Effect */
+.events-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Rounded button style */
+    transition: all 0.3s ease; /* Transition for animation requirement */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.events-btn:hover {
+    background-color: #557368; /* Switches to your main theme color on hover */
+    transform: scale(1.1); /* Hover-based transformation requirement */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 25px 0;
+}

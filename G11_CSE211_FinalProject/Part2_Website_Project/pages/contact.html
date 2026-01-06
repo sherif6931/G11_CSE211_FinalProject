@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact Me - EventX</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <header id="top-main">
+
+        <a id="logo" href="../index.html"><img src="./images/logo.jpg" alt="EventX Logo" width="100" height="100"></a>
+        <p id="top-text-header">EventX &mdash; An Event Planner Platform</p>
+
+        <nav id="main-navigation" aria-label="Main Navigation">
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./registration.html">Registeration</a></li>
+                <li><a href="./contact.html" id="selected">Contact Me</a></li>
+                <li><a href="./calculator.html">Budget Calculator</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+          <nav aria-label="breadcrumb" class="breadcrumb">
+                <a href="../index.html">Home</a> &gt; <a href="#">Contact Us</a>
+    </nav>
+
+    </header>
+   
+    <main id="contact-container">
+        <section id="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Have questions about an event? Saif Amer and the team are here to help!</p>
+        </section>
+
+        <div class="contact-flex">
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> <a href="tel:+20123456789">+20 110 490 7424</a></p>
+                <p><strong>Email:</strong> <a href="mailto:saif.amer@example.com">seef25theknight@gmail.com</a></p>
+                <p><strong>Office:</strong> New Cairo, Egypt</p>
+                
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </div>
+            </section>
+
+            <section class="contact-form-box">
+                <h2>Send a Message</h2>
+                <form action="thank-you.html" method="GET">
+                    <div class="form-group">
+                        <label for="contact-name">Name:</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg">Message:</label>
+                        <textarea id="contact-msg" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer id="footer-section">
+        <div class="footer-class">
+            <div id="footer-links">
+                <ul>
+                    <li hidden>Social Links</li>
+
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>You can email us <a href="mailto:sherif6931@github.com">here</a>.</p>
+            </div>
+            <div>
+                <p>&copy; 2026 EventX. All rights reserved.</p>
+                <p>This was last updated <time datetime="2026-1-04">January 1, 2026</time>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
