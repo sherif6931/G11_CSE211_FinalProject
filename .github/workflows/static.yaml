@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ../G11_CSE211_FinalProject/Part2_Website_Project
+          path: G11_CSE211_FinalProject/Part2_Website_Project
 
       - name: Deploy to GitHub Pages
         id: deployment
