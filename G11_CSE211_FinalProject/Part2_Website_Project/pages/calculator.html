@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <title>Budget Calculator - EventX</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <header id="top-main">
+        <a id="logo" href="../index.html"><img src="./images/logo.jpg" alt="EventX Logo" width="100" height="100"></a>
+        <p id="top-text-header">EventX &mdash; An Event Planner Platform</p>
+
+        <nav id="main-navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./registration.html">Registeration</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+                <li><a href="./calculator.html" id="selected">Budget Calculator</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+         <nav aria-label="breadcrumb" class="breadcrumb">
+                <a href="../index.html">Home</a> &gt; <a href="#">About Us</a>
+    </nav>
+
+    </header>
+   
+
+<main id="budget-container">
+    <div class="calculator-card">
+        
+        <h2>Event Budget Estimator</h2>
+        <p>Enter your estimated costs to see the total budget required for your event.</p>
+        
+        <form id="budget-form">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="venue">Venue Rental ($)</label>
+                    <input type="number" id="venue" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="catering">Catering & Drinks ($)</label>
+                    <input type="number" id="catering" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="marketing">Marketing & Ads ($)</label>
+                    <input type="number" id="marketing" placeholder="0">
+                </div>
+                <div class="input-group">
+                    <label for="staff">Staff & Security ($)</label>
+                    <input type="number" id="staff" placeholder="0">
+                </div>
+            </div>
+
+            <div class="calc-actions">
+                <button type="button" class="calc-btn">Calculate Total</button>
+                <button type="reset" class="reset-btn">Clear All</button>
+            </div>
+        </form>
+
+        <div class="results-box">
+            <h3>Estimated Total:</h3>
+            <span id="total-cost">$0.00</span>
+        </div>
+    </div>
+</main>
+
+
+    <footer id="footer-section">
+        <div class="footer-class">
+            <div id="footer-links">
+                <ul>
+                    <li hidden>Social Links</li>
+
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>You can email us <a href="mailto:sherif6931@github.com">here</a>.</p>
+            </div>
+            <div>
+                <p>&copy; 2026 EventX. All rights reserved.</p>
+                <p>This was last updated <time datetime="2026-1-04">January 1, 2026</time>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

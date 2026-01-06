@@ -1,0 +1,84 @@
+/* Container Layout */
+#events-dashboard {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Search & Filter Styling */
+.filter-controls input, .filter-controls select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 10px;
+    outline: none;
+}
+
+/* Table Card Effect */
+.table-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Soft shadow like your image */
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #666;
+    font-weight: 600;
+    text-align: left;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+td {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+/* Category Badges */
+.badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tech { background: #e8f0fe; color: #1a73e8; }
+.music { background: #fef0f0; color: #f56c6c; }
+
+/* Action Button */
+.reg-btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.reg-btn:hover {
+    background-color: #1557b0;
+}
+
+#main-navigation a#selected {
+    color: #0900b9;
+        font-size: 24px;
+
+}

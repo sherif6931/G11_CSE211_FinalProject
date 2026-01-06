@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EventX</title>
+    <link rel="stylesheet" href="./pages/css/general.css">
+    <link rel="stylesheet" href="./pages/css/index.css">
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <header id="top-main">
+        <a id="logo" href="#"><img src="./pages/images/logo.jpg" alt="EventX Logo" width="100" height="100"></a>
+        
+
+        <nav id="main-navigation" aria-label="Main Navigation">
+            <p id="top-text-header">EventX &mdash; An Event Planner Platform</p>
+            <ul>
+                <li><a href="./index.html" id="selected">Home</a></li>
+                <li><a href="./pages/about.html">About Us</a></li>
+                <li><a href="./pages/registration.html">Registeration</a></li>
+                <li><a href="./pages/contact.html">Contact Me</a></li>
+                <li><a href="./pages/calculator.html">Budget Calculator</a></li>
+                <li><a href="./pages/events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="homepage-layout">
+    <section id="featured-tickets">
+        <h2>Featured Event Tickets</h2>
+    <section class="ticket-list">
+    <article class="ticket-box">
+        <aside class="ticket-stub"><p>VIP Admission</p></aside>
+        <section class="ticket-main">
+            <div class="discount-badge">50% OFF</div>
+            <h2>EVENTX PROMO</h2>
+            <p>VALID UNTIL MAY, 2026</p>
+        </section>
+        <aside class="ticket-id"><code>787852111</code></aside>
+    </article>
+
+    <article class="ticket-box">
+        <aside class="ticket-stub"><p>Standard</p></aside>
+        <section class="ticket-main">
+            <div class="discount-badge">20% OFF</div>
+            <h2>EARLY BIRD</h2>
+            <p>VALID UNTIL FEB, 2026</p>
+        </section>
+        <aside class="ticket-id"><code>994852111</code></aside>
+    </article>
+</section>
+  
+
+    </section>
+
+    <aside id="event-filters">
+        <section class="filter-box">
+            <h3>Find your Event</h3>
+            <form id="search-form">
+                <label for="event-search">Search by Name:</label>
+                <input type="text" id="event-search" placeholder="e.g. Summit...">
+                
+                <label for="category-select">Category:</label>
+                <select id="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="tech">Technology</option>
+                    <option value="music">Music</option>
+                    <option value="edu">Education</option>
+                </select>
+
+                <button type="submit" class="filter-btn">Search Events</button>
+            </form>
+        </section>
+
+        <section class="planner-cta">
+            <h3>Plan Your Own?</h3>
+            <p>Use our budget tool to estimate your event costs.</p>
+            <a href="./pages/calculator.html" class="cta-link">Get Started</a>
+        </section>
+    </aside>
+</main>
+    <footer id="footer-section">
+        <div class="footer-class">
+            <div id="footer-links">
+                <ul>
+                    <li hidden>Social Links</li>
+
+                    <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">Twitter</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="./pages/contact.html">Contact Me</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>You can email us <a href="mailto:sherif6931@github.com">here</a>.</p>
+            </div>
+            <div>
+                <p>&copy; 2026 EventX. All rights reserved.</p>
+                <p>This was last updated <time datetime="2026-1-04">January 5, 2026</time>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
