@@ -131,8 +131,63 @@ Description: This CSS file handles the styling for the sticky header and main na
   transform: rotate(-90deg);
 }
 
+/* THIS IS FOR MOBILES*/ 
+@media (max-width: 768px) {
+    /* 1. Fix the fixed-width ticket container */
+    .ticket-box {
+        width: 95% !important; /* Forces it to fit the phone screen */
+        height: auto !important; /* Allow it to grow vertically */
+        flex-direction: column; /* Stack the ticket parts */
+        margin: 1rem auto;
+    }
 
+    /* 2. Fix the "Radial Gradient" background punch-holes */
+    .ticket-box::before,
+    .ticket-box::after {
+        width: 100%;
+        height: 50%;
+    }
+    .ticket-box::before {
+        background-image: radial-gradient(circle at 50% 0, transparent 15px, rgb(240, 208, 122) 16px);
+    }
+    .ticket-box::after {
+        background-image: radial-gradient(circle at 50% 100%, transparent 15px, rgb(240, 208, 122) 16px);
+        bottom: 0;
+        top: auto;
+    }
 
+    /* 3. Rotate the vertical text back to normal so it fits */
+    .ticket-stub {
+        width: 100% !important;
+        border-right: none !important;
+        border-bottom: 2px dashed rgba(0, 0, 0, 0.13);
+        padding: 10px 0;
+    }
+
+    .ticket-stub p {
+        transform: rotate(0deg) !important; /* Stop rotating the text */
+        text-align: center;
+    }
+
+    /* 4. Fix the barcode section at the bottom */
+    .ticket-id {
+        width: 100% !important;
+        height: 80px;
+        background-image: none !important;
+        background-color: #fff;
+    }
+
+    .ticket-id code {
+        transform: rotate(0deg) !important; /* Lay barcode flat */
+        font-size: 1.2rem;
+    }
+
+    /* 5. Sidebar/Filter Fix */
+    .filter-box, .planner-cta {
+        margin-left: 0 !important; /* Removes the 30px offset from desktop */
+        width: 100% !important;
+    }
+}
 
 
 #homepage-layout {

@@ -61,6 +61,7 @@ td {
 
 .tech { background: #e8f0fe; color: #1a73e8; }
 .music { background: #fef0f0; color: #f56c6c; }
+.workshop {background: #f0fef3; color: rgb(135, 222, 5);}
 
 /* Action Button */
 .reg-btn {
@@ -71,6 +72,34 @@ td {
     border-radius: 6px;
     font-size: 0.9rem;
     transition: background 0.3s;
+}
+
+.parallax-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.parallax-banner .parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.1s linear;
+}
+
+.parallax-banner h1 {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 2.5rem;
+}
+
+.parallax-banner p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .reg-btn:hover {
