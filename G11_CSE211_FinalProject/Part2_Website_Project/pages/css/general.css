@@ -10,9 +10,72 @@ Description: This CSS file handles the styling for the sticky header and main na
 /*THIS IS FOR MOBILE FIX*/
 
 @media (max-width: 768px) {
+    /* 1. Header Container setup */
+    #main-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Keeps icons/text on the left */
+        width: 100%;
+        position: relative; /* Anchor point for the absolute menu */
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    /* 2. The Menu (The 'Drop Down' Overlay) */
+    #main-navigation ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute; /* Floating on top of content */
+        top: 100%; /* Starts exactly at the bottom of the header */
+        left: 0;
+        width: 100%;
+        z-index: 9999; /* Ensures it stays on top of tickets/forms */
+        
+        /* Retracted state */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        
+        background-color: #AC997F; /* Matches header to look seamless */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* 3. Expanded State */
+    #menu-toggle:checked ~ ul {
+        max-height: 600px; /* Adjust based on number of links */
+    }
+
+    /* 4. Left-Aligned Links */
+    #main-navigation li {
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    #main-navigation a {
+        display: block;
+        padding: 15px 20px; /* Padding for the left-aligned look */
+        text-align: left;
+        width: 100%;
+        color: #000;
+        text-decoration: none;
+    }
+
+    /* 5. Icon Alignment */
+    .menu-icon {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        margin-left: 0;
+    }
+}   
+
+@media (max-width: 768px) {
     /* 1. Hide the Logo */
     #logo {
-        display: none !important;
+        display: none ;
     }
 
     /* 2. Fix the Header & Background */
@@ -26,10 +89,7 @@ Description: This CSS file handles the styling for the sticky header and main na
     }
 
     #top-text-header {
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 15px;
+       display: none;
     }
 
     /* 3. Force Navigation to stack and center */
@@ -111,7 +171,7 @@ Description: This CSS file handles the styling for the sticky header and main na
     .event-card, 
     #footer-section,
     section {
-        width: 90% !important; /* Keep content slightly smaller than screen */
+        width: 94% !important; /* Keep content slightly smaller than screen */
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
