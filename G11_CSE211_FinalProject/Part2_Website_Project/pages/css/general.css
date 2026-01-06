@@ -80,7 +80,7 @@ Description: This CSS file handles the styling for the sticky header and main na
 
     /* 2. Fix the Header & Background */
     #top-main {
-        width: 100% !important;
+        width: 100% ;
         position: relative; /* Change from sticky/absolute to relative for better flow */
         display: flex;
         flex-direction: column;
@@ -107,9 +107,9 @@ Description: This CSS file handles the styling for the sticky header and main na
 
     /* 4. Fix the Footer (The blue box) */
     footer {
-        width: 100% !important;
+        width: 100% ;
         position: relative;
-        left: 0 !important;
+        left: 0 ;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -127,10 +127,10 @@ Description: This CSS file handles the styling for the sticky header and main na
     .event-card, 
     div[style*="border"], 
     section {
-        width: 95% !important; /* Forces them to stay inside the phone screen */
-        max-width: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        width: 95% ; /* Forces them to stay inside the phone screen */
+        max-width: none ;
+        margin-left: auto ;
+        margin-right: auto ;
         box-sizing: border-box;
     }
 }
@@ -146,7 +146,7 @@ Description: This CSS file handles the styling for the sticky header and main na
 
     /* 2. Force Header to span 100% of the viewport */
     #top-main {
-        width: 100vw !important; /* vw = viewport width (100% of screen) */
+        width: 100vw ; /* vw = viewport width (100% of screen) */
         left: 0;
         margin: 0;
         box-sizing: border-box;
@@ -157,7 +157,7 @@ Description: This CSS file handles the styling for the sticky header and main na
 
     /* 3. Force Footer to span 100% of the viewport */
     footer {
-        width: 100vw !important;
+        width: 100vw ;
         position: relative;
         left: 0;
         margin: 0;
@@ -171,7 +171,7 @@ Description: This CSS file handles the styling for the sticky header and main na
     .event-card, 
     #footer-section,
     section {
-        width: 94% !important; /* Keep content slightly smaller than screen */
+        width: 94% ; /* Keep content slightly smaller than screen */
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -183,16 +183,16 @@ Description: This CSS file handles the styling for the sticky header and main na
 @media (max-width: 768px) {
     .breadcrumb {
         /* 1. Reset positioning so it stays in the flow */
-        position: relative !important; 
+        position: relative ; 
         
         /* 2. Clear out the desktop absolute coordinates */
-        left: 0 !important;
-        top: 0 !important;
+        left: 0 ;
+        top: 0 ;
         
         /* 3. Center it and give it some breathing room */
         display: block;
         width: fit-content;
-        margin: 20px auto !important; 
+        margin: 20px auto ; 
         text-align: center;
         
         /* 4. Adjust size for mobile screens */
@@ -206,6 +206,10 @@ Description: This CSS file handles the styling for the sticky header and main na
         display: flex;
         flex-direction: column;
     }
+}
+
+.menu-icon{
+    display: none;
 }
 
 body {
@@ -281,10 +285,10 @@ footer{
 }
 
 footer {
-    width: 100vw !important; /* Forces it to be exactly 100% of the viewport width */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    left: 0 !important;
+    width: 100vw ; /* Forces it to be exactly 100% of the viewport width */
+    margin-left: 0 ;
+    margin-right: 0 ;
+    left: 0 ;
 }       
 
 
