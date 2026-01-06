@@ -7,6 +7,38 @@
     <link rel="stylesheet" href="./css/regestration.css">
 
     <title>Registeration - EventX</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("registration-form");
+
+            const nameExp  = /^([A-Za-z]|\s){1,100}$/;
+            const emailExp = /^.+\@(\w)+\.(\w)+$/
+
+            form.addEventListener("submit", (e) => {
+                let err = [];
+
+                /* trim to remove whitespace */
+                const fullName = document.getElementById("full-name").value.trim(); 
+                const email    = document.getElementById("user-email").value.trim();
+
+                if (!nameExp.test(fullName)) {
+
+                    err.push("Please enter a valid full name (i.e., letters and spaces only).\n");
+                }
+
+                if (!emailExp.test(email)) {
+
+                    err.push("Please enter a valid email address (e.g., user@example.com)\n");
+                }
+
+                if (err.length > 0) {
+                    e.preventDefault();
+
+                    alert(err.join("\n"));
+                }
+            });
+        });
+    </script>
 </head>
 <body style="font-family: Arial, Helvetica, sans-serif;">
     <header id="top-main">
