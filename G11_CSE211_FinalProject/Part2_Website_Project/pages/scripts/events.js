@@ -20,7 +20,7 @@ const filterEvents = _ => {
          * and find any characters that match the word ‘‘w’’,
          * and then match the rest after lookahead 
          * */
-        
+
         regex = new RegExp(words.map(w => `(?=.*${w})`).join("") + ".*", "i");
     } catch (e) {
         regex = /.^/;
@@ -43,4 +43,23 @@ document.addEventListener("DOMContentLoaded", () => {
     categoryFilter.addEventListener("change", filterEvents);
 
     filterEvents();
+});
+
+const layers = document.querySelectorAll(".parallax-layer");
+
+const updateParallax = _ => {
+    let top = window.scrollY;
+
+    layers.forEach(layer => {
+        let tmp = parseFloat(layer.dataset.speed) || 0.5;
+
+        layer.style.transform = `translateY(${top * tmp}px)`;
+    });
+};
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("scroll", updateParallax);
+    
+    updateParallax();
 });
