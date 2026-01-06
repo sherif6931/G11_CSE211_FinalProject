@@ -1,3 +1,28 @@
+
+
+@media (max-width: 768px) {
+    .parallax-banner {
+        padding: 20px 10px; /* small padding */
+    }
+
+    .parallax-layer h1 {
+        font-size: 1.5rem;
+    }
+
+    .parallax-layer p {
+        font-size: 1rem;
+    }
+
+    #event-image {
+        width: 100%;
+        height: auto;
+        max-height: 300px; /* optional: keep image from being too tall */
+        object-fit: cover;
+    }
+}
+
+
+
 /* Container Layout */
 #events-dashboard {
     max-width: 1200px;
@@ -10,6 +35,70 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start; /* Aligns everything to the left on mobile */
+  }
+  
+  .filter-controls {
+    margin-top: 15px; /* Adds space below the "Upcoming Events" title */
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Force the table not to behave like a table anymore */
+  .table-card, 
+  .table-card thead, 
+  .table-card tbody, 
+  .table-card th, 
+  .table-card td, 
+  .table-card tr {
+    display: block;
+  }
+
+  /* Hide table headers (but keep them accessible for screen readers) */
+  .table-card thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-card tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .table-card td {
+    text-align: left;    /* Moves the data text to the left */
+    padding-left: 10px;  /* Resets padding so text isn't pushed to the middle */
+    padding-top: 35px;   /* Adds space above the text for the label */
+    position: relative;
+    border-bottom: 1px solid #eee;
+  }
+
+  .table-card td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 8px;           /* Positions the label above the data */
+    left: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #888;        /* Makes the label look like a subtle header */
+  }
 }
 
 /* Search & Filter Styling */
@@ -50,6 +139,8 @@ td {
     border-bottom: 1px solid #eee;
     color: #444;
 }
+
+
 
 /* Category Badges */
 .badge {
