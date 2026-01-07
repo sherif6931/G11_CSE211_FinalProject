@@ -1,3 +1,5 @@
+[![Deploy static content to Pages](https://github.com/sherif6931/G11_CSE211_FinalProject/actions/workflows/static.yaml/badge.svg?branch=dev)](https://github.com/sherif6931/G11_CSE211_FinalProject/actions/workflows/static.yaml)
+
 ## HTML
 We used HTML as the backbone of our website because it lets us structure all the content in a clear and organized way. It gave us the framework to place text, images, links, and forms exactly where we needed them. By understanding HTML well, we could make sure the site was accessible, easy to navigate, and ready for styling and interactivity.
 
